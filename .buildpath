@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path=""/>
+	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/wordpress">
+		<accessrules>
+			<accessrule kind="nonaccessible" pattern="**/silex-proof/**"/>
+		</accessrules>
+	</buildpathentry>
+</buildpath>
