@@ -11,13 +11,15 @@ use Silex\Application;
 class SettingsProvider implements ServiceProviderInterface, BootableProviderInterface 
 {
 
+    protected $twig;
+    
 	public function register(Container $app)
 	{
-	    add_action('admin_menu', array($this, 'register_page'));
 	    
 		$app['settings_provider'] = function (Container $app) 
 		{
-			//$app['logger']->addDebug('SettingPageProvider called');
+		    $this->twig = $app['twig'];
+			$app['logger']->addDebug('SettingPageProvider called', array($app['twig']));
 			return $this;
 		};
 		
@@ -47,6 +49,7 @@ class SettingsProvider implements ServiceProviderInterface, BootableProviderInte
 	
 	public function render() 
 	{
+	    /*
 		ob_start();
 		?>
 		<div class="wrap">
@@ -55,6 +58,10 @@ class SettingsProvider implements ServiceProviderInterface, BootableProviderInte
 		<?php
 		$content = ob_get_clean();
 		return $content;
+	    */
+	    return $this->twig->render('settings.html.twig', array(
+	        'name' => 'Silex Proof',
+	    ));
 	}
 
 }

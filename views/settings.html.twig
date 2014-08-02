@@ -1,0 +1,16 @@
+<div class="wrap">
+	<h2>Plugin Configuration {{ name }}</h2>
+	<script type="text/javascript">
+	   jQuery.post(
+		    ajaxurl, 
+		    {
+		        'action': 'my_ajax',
+		        'data':   'bob marley'
+		    }, 
+		    function(response){
+			    jQuery('#content').html(response);
+		    }
+		);
+	</script>
+	<div id="content"></div>
+</div>
