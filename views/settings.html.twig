@@ -5,10 +5,10 @@
 		    ajaxurl, 
 		    {
 		        'action': 'my_ajax',
-		        'data':   'bob marley'
+		        'data':   'Are you crazy ?!'
 		    }, 
 		    function(response){
-			    jQuery('#content').html(response);
+			    jQuery('#content').html( JSON.parse(response));
 		    }
 		);
 	</script>
