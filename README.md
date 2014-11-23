@@ -28,7 +28,7 @@ The ULTIMATE INFINITE ENSLAVEMENT this hack screams !
 
 > What's the purpose of the plugin? Why don't you talk about the business instead of WordPress or Silex, those are just tools
 
-> Arghhh... God help you, cause the tools will not...  
+> Arghhh... God help you, cause the tools will not! 
 
 So you're warned, don't try this at home or do it at your own risk :)
 
